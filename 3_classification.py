@@ -1,20 +1,17 @@
 import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 import pickle
 
-from nltk.tokenize import BlanklineTokenizer
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 
 from tensorflow.keras import Sequential
-from tensorflow.keras.layers import (
-    Dense, Conv2D, Bidirectional, Flatten, Embedding, LSTM
-)
+from tensorflow.keras.layers import Dense, ConvLSTM2D, Embedding, Flatten, Bidirectional, LSTM
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.losses import SparseCategoricalCrossentropy
 from tensorflow.keras.optimizers import Adam
-
-seed = 19
 
 
 
@@ -22,23 +19,26 @@ seed = 19
 with open('corpus.pkl', 'rb') as f:
     corpus = pickle.load(f)
 
-
-# No considerar las tres primeras filas =====================================================================
-def custom_tokenizer(text):
-    lines = text.split('\r\n')[3:]
-    new_lines = BlanklineTokenizer().tokenize('\r\n'.join(lines))
-    return new_lines
-
-corpus_tok = custom_tokenizer(corpus.raw())
+categories = corpus.categories() 
+print(categories)
+print(len(categories))
 
 
-# Train-test split ==========================================================================================
-print(len(corpus_tok))
-print(len(corpus.categories()))
+# Train test split ==========================================================================================
+X_train = []; X_test  = []; y_train = []; y_test  = []
 
-
-X_train, X_test, y_train, y_test = \
-    train_test_split(corpus_tok, corpus.categories(), test_size=0.2, random_state=seed)
+for cat in categories:
+    files = corpus.fileids(categories=cat)
+    train_files, test_files = train_test_split(files, test_size=0.3, random_state=19)
+    
+    # Unión de palabras en documentos
+    train_documents = [' '.join(corpus.words(fileids=f)) for f in train_files]
+    test_documents  = [' '.join(corpus.words(fileids=f)) for f in test_files ]
+    
+    X_train.extend(train_documents)
+    X_test.extend(test_documents)
+    y_train.extend([cat] * len(train_documents))
+    y_test.extend([cat] * len(test_documents))
 
 
 # Procesamiento de texto ====================================================================================
@@ -52,34 +52,61 @@ tokenizer.fit_on_texts(X_train)
 vocabulario = len(tokenizer.word_index) + 1
 
 X_train = tokenizer.texts_to_sequences(X_train)
-X_test = tokenizer.texts_to_sequences(X_test)
+X_test  = tokenizer.texts_to_sequences(X_test)
 X_train = pad_sequences(X_train)
-X_test = pad_sequences(X_test)
+X_test  = pad_sequences(X_test)
+
+'''
+print(X_train)
+print(y_train)
+print(X_test)
+print(y_test)
+print(vocabulario)
+'''
 
 
 # Modelo de red neuronal ConvLSTM ===========================================================================
-model = Sequential([
-    Embedding(vocabulario, 64),
-    Bidirectional(LSTM(64, return_sequences=True)),
-    Bidirectional(LSTM(32)),
-    Dense(64, activation='relu'),
-    Dense(5, activation='linear')
-])
+model = Sequential(
+    [
+        Embedding(vocabulario, 128),
+        Bidirectional(LSTM(128, return_sequences=True)),
+        Bidirectional(LSTM(64)),
+        # ConvLSTM2D(filters=64, kernel_size=(1, 1), activation='relu', padding='same', return_sequences=True),
+        # ConvLSTM2D(filters=32, kernel_size=(1, 1), activation='relu', padding='same'),
+        Flatten(),
+        Dense(128, activation='relu'),
+        Dense(32, activation='relu'),
+        Dense(5, activation='linear')
+    ]
+)
+# print(model.summary())
 
 model.compile(
     loss=SparseCategoricalCrossentropy(from_logits=True),
-    optimizer=Adam(0.001),
+    optimizer=Adam(0.005),
     metrics=['mean_squared_error', 'accuracy']
 )
 
 results = model.fit(
-    X_train, y_train,
-    epochs=10,
-    verbose=10,
-    validation_data=(X_test, y_test)
+    X_train, np.array(y_train_encoded),
+    epochs=50,
+    verbose=2,
+    validation_data=(X_test, np.array(y_test_encoded))
 )
 
 
 
+# Visualizaciones ============================================================================================
+plt.plot(results.history['accuracy'])
+plt.plot(results.history['val_accuracy'])
+plt.xlabel('epochs')
+plt.ylabel('accuracy')
+plt.legend(['accuracy', 'val_accuracy'])
+plt.show()
 
-
+plt.plot(results.history['loss'])
+plt.plot(results.history['val_loss'])
+plt.xlabel('epochs')
+plt.ylabel('loss')
+plt.legend(['loss', 'val_loss'])
+plt.show()

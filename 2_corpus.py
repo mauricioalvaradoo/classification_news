@@ -11,8 +11,6 @@ nltk.download('punkt')
 
 
 stops = stopwords.words('spanish')
-punto_junto = r'\b\w+\.\w*\b' # En caso que dos palabras estén juntas por un punto (es un error)
-
 
 
 # Corpus ================================================================================================
@@ -39,20 +37,15 @@ print(categorias)
 
 # Exploración =============================================================================================
 for categoria in categorias:
+    ws = []
 
     files = corpus.fileids(categories=categoria)
-    corpus_categoria = ""
-
-    # No considerar las tres primeras filas del texto
     for f in files:
-        content = corpus.raw(fileids=f)
-        lines = content.split('\r\n')[3:]
-        new_lines = BlanklineTokenizer().tokenize('\r\n'.join(lines))
-        corpus_categoria += ' '.join(new_lines)
+        # Transformaciones adicionales
+        texto = corpus.raw(f)
+        ws += re.findall(r'\w+', texto.lower())
 
-    # Transformaciones adicionales
-    ws = re.sub(punto_junto, lambda m: m.group().replace('.', ''), corpus_categoria)
-    ws = word_tokenize(ws.lower())
+    stops = set(stopwords.words('spanish'))
     ws = [
         w for w in ws
         if w not in stops and
@@ -60,7 +53,7 @@ for categoria in categorias:
            w not in ['“', '”', '``', "''", '–', '‘', '’', '•']
     ]
 
-    # # Palabras más frecuentes por categoría
+    # Palabras más frecuentes por categoría
     freq = nltk.FreqDist(ws)
     words_more_freq = freq.most_common(20)
 
