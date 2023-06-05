@@ -1,10 +1,12 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 import pickle
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import confusion_matrix
 
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, ConvLSTM2D, Embedding, Flatten, Bidirectional, LSTM
@@ -49,7 +51,7 @@ y_test_encoded = labels.transform(y_test)
 tokenizer = Tokenizer()
 tokenizer.fit_on_texts(X_train)
 
-vocabulario = len(tokenizer.word_index) + 1
+vocab_size = len(tokenizer.word_index) + 1
 
 X_train = tokenizer.texts_to_sequences(X_train)
 X_test  = tokenizer.texts_to_sequences(X_test)
@@ -61,14 +63,14 @@ print(X_train)
 print(y_train)
 print(X_test)
 print(y_test)
-print(vocabulario)
+print(vocab_size)
 '''
 
 
 # Modelo de red neuronal ConvLSTM ===========================================================================
 model = Sequential(
     [
-        Embedding(vocabulario, 128),
+        Embedding(vocab_size, 128),
         Bidirectional(LSTM(128, return_sequences=True)),
         Bidirectional(LSTM(64)),
         # ConvLSTM2D(filters=64, kernel_size=(1, 1), activation='relu', padding='same', return_sequences=True),
@@ -110,3 +112,18 @@ plt.xlabel('epochs')
 plt.ylabel('loss')
 plt.legend(['loss', 'val_loss'])
 plt.show()
+
+
+# Matriz de confusión
+y_hat = model.predict(X_test)
+y_hat = np.argmax(y_hat, axis=1)
+
+confusion_matrix = confusion_matrix(y_test_encoded, y_hat)
+sns.heatmap(confusion_matrix, annot=True, cmap='Blues')
+plt.xlabel('Estimado')
+plt.ylabel('Real')
+plt.show()
+
+
+# Guardado
+model.save('model.h5')

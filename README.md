@@ -6,7 +6,7 @@ En el periódico El Comercio, las principales categorías de las noticias son la
 - Deportes
 - Tecnología
 
-Para el proceso de clasificación se requiere 
+Para el proceso de clasificación se requiere:
 1. [Extraer el contenido de cada una de la noticias](https://github.com/mauricioalvaradoo/classification_news/blob/master/1_scraping.py), mediante web scraping.
 2. [Crear un corpus](https://github.com/mauricioalvaradoo/classification_news/blob/master/2_corpus.py), en el que se categoriza todas las noticias según temática.
 3. [Crea una red neuronal recurrente](https://github.com/mauricioalvaradoo/classification_news/blob/master/3_classification.py), que interprete el contexto de las noticias.
