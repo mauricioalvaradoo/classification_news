@@ -30,8 +30,9 @@ corpus = CategorizedPlaintextCorpusReader(
 
 fileids    = corpus.fileids()
 categorias = corpus.categories()
-# print(fileids)
 print(categorias)
+print(len(categorias))
+print(len(fileids))
 
 
 
