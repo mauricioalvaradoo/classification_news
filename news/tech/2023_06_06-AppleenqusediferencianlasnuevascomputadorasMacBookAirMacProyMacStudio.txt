@@ -1,0 +1,110 @@
+Apple  ha revelado sus nuevas computadoras durante la Conferencia Mundial de Desarrolladores (WWDC) de este año. La compañía señala que las tres cuentan con su nuevo chip M2 y que la nueva Mac Pro es la más potente que ha lanzado hasta la fecha. Sin embargo,  la nueva MacBook Air se ha llevado todas la miradas , pues al ser más fácil de llevar y tener una variante con una pantalla de 15 pulgadas, sigue siendo una de las favoritas de los usuarios. Sin embargo,  la Mac Studio también es una gran opción, pues tiene dos variante: una con el chip M2 Max y M2 Ultra . La nueva laptop de Apple  viene en dos versiones: de 13 y 15 pulgadas . Las características son prácticamente idénticas en ambos dispositivos, donde destaca el chip M2, el más potente que ha lanzado la compañía hasta ahora. Este cuenta con una pantalla Liquid Retina de alta resolución, capaz de reproducir hasta 500 nits de brillo y compatible con 1.000 millones de colores. Según el fabricante,  este modelo ofrece el doble de resolución y un 25% más de brillo que un PC portátil equivalente . Características MacBook Air 13′' MacBook Air 15′' Procesador Apple M2 de 8 núcleos (4P + 4E) 
+GPU: 8 núcleos 
+Neural Engine: 16 núcleos 
+100GB/s de ancho de banda de memoria Apple M2 de 8 núcleos (4P + 4E) 
+GPU: 10 núcleos 
+Neural Engine: 16 núcleos 
+100GB/s de ancho de banda de memoria Sistema operativo macOS macOS Pantalla Liquid Retina 
+Retroiluminada por LED de 13,6 pulgadas 
+Tecnología IPS 
+2560 x 1664 
+224 píxeles por pulgada 
+500 nits de brillo 
+Color amplio (P3) 
+Tecnología True Tone Liquid Retina 
+Retroiluminada por LED de 13,6 pulgadas 
+Tecnología IPS 
+2560 x 1664 
+224 píxeles por pulgada 
+500 nits de brillo 
+Color amplio (P3) 
+Tecnología True Tone Almacenamiento SSD 
+256 GB (expandible hasta 512 GB, 1 TB ó 2 TB) 
+512 GB (expandible hasta 1 TB ó 2 TB) SSD 
+256 GB (expandible hasta 512 GB, 1 TB ó 2 TB) 
+512 GB (expandible hasta 1 TB ó 2 TB) Memoria RAM 8GB (expandible hasta 16 GB ó 24 GB) 8GB (expandible hasta 16 GB ó 24 GB) Teclado y panel táctil Teclado Backlit Magic 
+Touch ID 
+Sensor de luz ambiental 
+Panel táctil Force Touch Teclado Backlit Magic 
+Touch ID 
+Sensor de luz ambiental 
+Panel táctil Force Touch Cámara Cámara HD 1080p 
+FaceTime Cámara HD 1080p 
+FaceTime Audio Sistema de sonido de 4 parlantes 
+Compatible con Spatial Audio 
+Seguimiento dinámico al usar AirPods (3ra gen), AirPods Pro y AirPods Max 
+Conjunto de tres micrófonos con formación de haz direccional Sistema de sonido de 4 parlantes 
+Compatible con Spatial Audio 
+Seguimiento dinámico al usar AirPods (3ra gen), AirPods Pro y AirPods Max 
+Conjunto de tres micrófonos con formación de haz direccional Conectividad WiFi 6 
+Bluetooth 5.3 
+Thunderbolt 3 x1 
+USB 4 x1 
+MagSafe 
+Entrada de 3,5 mm para audio WiFi 6 
+Bluetooth 5.3 
+Thunderbolt 3 x1 
+USB 4 x1 
+MagSafe 
+Entrada de 3,5 mm para audio Batería Polímero de litio de 52,6 watt por hora 
+Hasta 15 horas de conexión web inalámbrica 
+Adaptador de corriente USB-C de 30 W 
+Cable USB-C a MagSafe 3 
+Carga rápida con adaptador de corriente USB-C de 70 W Polímero de litio de 52,6 watt por hora Hasta 15 horas de conexión web inalámbrica 
+Adaptador de corriente compacto con puerto USB-C dual de 35 W 
+Cable USB-C a MagSafe 3 
+Carga rápida con adaptador de corriente USB-C de 70 W Tamaño 1,13 cm x 30,41 cm x  21,5 cm 1,13 cm x 30,41 cm x  21,5 cm Peso 1,24 kg 1,5 kg Colores Plata 
+Luz estelar 
+Gris espacial 
+Medianoche Plata 
+Luz estelar 
+Gris espacial 
+Medianoche Precio US$1.099 US$1.499 La nueva Mac Pro ofrece  un notable rendimiento gracias al chip M2 Ultra e incluye siete ranuras de expansión PCIe , con seis ranuras de expansión abiertas compatibles con Gen 4. Asimismo, presenta ocho puertos Thunderbolt 4, esto es, el doble que el modelo anterior, con chip M1. Esta es la computadora más potente de Apple hasta este momento . La compañía la coloca como su principal apuesta para los usuarios que buscan potencia y la calidad de las herramientas de sus ecosistema. Características Mac Pro Procesador Apple M2 Ultra 
+24 núcleos (16P + 8E) 
+GPU: 60 núcleos 
+Neural Engine: 32 núcleos 
+800 GB/s de ancho de banda de memoria Sistema Operativo macOS Compatible con monitores Hasta 8 en simultáneo 
+8 monitores con una resolución de hasta 4K a 60 Hz 
+6 monitores con una resolución de hasta 6K a 60 Hz 
+3 monitores con una resolución de hasta 8K a 60 Hz Almacenamiento SSD 
+1 TB (expandible hasta 2 TB, 4 TB u 8 TB) Memoria RAM 64 GB (expandible hasta 128 GB ó 192 GB) Periféricos Magic Keyboard con Touch ID y teclado numérico 
+Magic Mouse (opcional) 
+Magic Trackpad (opcional) Audio Parlante integrado Conectividad WiFi 6 
+Bluetooth 5.3 
+Puerto Ethernet de 10 Gb x2 
+Thunderbolt 4 x8 
+USB-A x1 (interno) 
+Serial ATA x2 (interno) 
+USB-A x2 (externo) 
+HDMI x2 
+Entrada de 3.5 mm para audífonos Tamaño Torre: 52,9 cm x 21,8 cm x 45 cm (sin las ruedas) 
+Con Rack: 22,02 cm x 48,2 cm x 60,96 cm (sin el asa) Peso Torre: 16,86 kg 
+Con Rack: 17,21 kg Precio US$6.999 Mac Studio funciona tanto con el chip M2 como con el nuevo M2 Ultra  y alcanza las 193 GB de memoria unificada. Su CPU alcanza los 24 núcleos y la GPU, los 76 núcleos. El modelo con plataforma M2 Max es 4 veces más rápido que otro ordenador Intel basado en iMac, mientras que  la versión con M2 Ultra multiplica este rendimiento hasta lograr un resultado 6 veces más rápido . Características Mac Studio Procesador Apple M2 Max : 
+ 12 núcleos (8P+4E) 
+GPU: 30 núcleos 
+Neural Engine: 16 núcleos 
+400 GB/s de ancho de banda de memoria 
+ Apple M2 Ultra : 
+124 núcleos (16P+8E) 
+GPU: 60 núcleos 
+Neural Engine: 32 núcleos 
+800 GB/s de ancho de banda de memoria Sistema operativo macOS Compatible con monitores M2 Max : 
+Hasta 5 en simultáneo 
+4 monitores con una resolución de hasta 6K a 60 Hz + 1 con 4K de resolución a 60 Hz por HDMI 
+2 monitores con una resolución de hasta 6K a 60 Hz + 1 con 8K de resolución a 60-240Hz por HDMI 
+ M2 Ultra : 
+Hasta 8 en simultáneo 
+8 monitores con resolución de hasta 4K a 60 Hz 
+6 monitores con una resolución de hasta 6K a 60 Hz 
+3 monitores con una resolución de hasta 8K a 60 Hz Almacenamiento SSD 
+ M2 Max : 512 GB (expandible hasta 1 TB, 2 TB, 4 TB u 8 TB) 
+ M2 Ultra : 1 TB (expandible hasta 2 TB, 4 TB u 8 TB) Memoria RAM M2 Max : 32 GB (expandible hasta 64 GB ó 96 GB) 
+ M2 Ultra : 64 GB (expandible hasta 128 GB ó 192 GB) Audio Parlante integrado Conectividad WiFi 6E 
+Bluetooth 5.3 
+Ethernet 10Gb 
+Thunderbolt 4 x4 
+USB-A x2 
+HDMI 
+Entrada de 3.5 mm para audífonos Tamaño 9,5 cm x 19,7 cm x 19,7 cm Peso M2 Max : 2,7 kg 
+ M2 Ultra : 3,6 kg Precio M2 Max : US$1.999 
+ M2 Ultra : US$3.999 Con información de Europa Press

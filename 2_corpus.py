@@ -6,8 +6,8 @@ from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.corpus import CategorizedPlaintextCorpusReader
 from nltk.tokenize import BlanklineTokenizer
-nltk.download('stopwords')
-nltk.download('punkt')
+# nltk.download('stopwords')
+# nltk.download('punkt')
 
 
 stops = stopwords.words('spanish')
