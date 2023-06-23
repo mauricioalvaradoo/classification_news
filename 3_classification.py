@@ -91,7 +91,7 @@ model.compile(
 results = model.fit(
     X_train, np.array(y_train_encoded),
     epochs=20,
-    verbose=2,
+    verbose=1,
     validation_data=(X_test, np.array(y_test_encoded))
 )
 
