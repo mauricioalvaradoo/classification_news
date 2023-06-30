@@ -2,7 +2,6 @@ import pickle
 import re
 from string import punctuation
 import nltk
-from nltk import word_tokenize
 from nltk.corpus import stopwords
 from nltk.corpus import CategorizedPlaintextCorpusReader
 from nltk.tokenize import BlanklineTokenizer
@@ -28,6 +27,13 @@ corpus = CategorizedPlaintextCorpusReader(
 )
 
 
+# Guardar corpus
+with open('corpus.pkl', 'wb') as f:
+    pickle.dump(corpus, f)
+
+
+
+# Exploración =============================================================================================
 fileids    = corpus.fileids()
 categorias = corpus.categories()
 print(categorias)
@@ -35,8 +41,6 @@ print(len(categorias))
 print(len(fileids))
 
 
-
-# Exploración =============================================================================================
 for categoria in categorias:
     ws = []
 
@@ -63,10 +67,4 @@ for categoria in categorias:
         print(f"{w}: {f}")
 
     print('\n ---------------------------------------- \n')
-
-
-
-# Guardar corpus
-with open('corpus.pkl', 'wb') as f:
-    pickle.dump(corpus, f)
 
