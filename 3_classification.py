@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
+import gzip
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
@@ -18,7 +19,7 @@ from tensorflow.keras.callbacks import Callback
 
 
 # Recuperar el corpus =======================================================================================
-with open('corpus.pkl', 'rb') as f:
+with gzip.open('corpus.pkl.gz', 'rb') as f:
     corpus = pickle.load(f)
 
 categories = corpus.categories() 
@@ -104,10 +105,15 @@ results = model.fit(
     callbacks = [callbacks]
 )
 
+# Guardado
+'''
+with gzip.open('results.pkl.gz', 'wb') as f:
+    pickle.dump(results, f)
 
 model.save('model.h5')
+'''
 
-
+    
 
 # Visualizaciones ============================================================================================
 plt.plot(results.history['accuracy'])
@@ -116,7 +122,7 @@ plt.xlabel('epochs')
 plt.ylabel('accuracy')
 plt.legend(['train', 'test'])
 plt.title('Accuracy estimated')
-plt.savefig('figures/accuracy.png', dpi=300, bbox_inches='tight')
+plt.savefig('figures/accuracy.png', dpi=500, bbox_inches='tight')
 plt.show()
 
 plt.plot(results.history['loss'])
@@ -125,7 +131,7 @@ plt.xlabel('epochs')
 plt.ylabel('loss')
 plt.legend(['train', 'test'])
 plt.title('Loss estimated')
-plt.savefig('figures/loss.png', dpi=300, bbox_inches='tight')
+plt.savefig('figures/loss.png', dpi=500, bbox_inches='tight')
 plt.show()
 
 
@@ -141,7 +147,7 @@ plt.yticks(ticks=np.arange(len(orig_labels))+0.5, labels=orig_labels, va='center
 plt.xlabel('estimated')
 plt.ylabel('real')
 plt.title('Confussion Matrix')
-plt.savefig('figures/confussion_matrix.png', dpi=300, bbox_inches='tight')
+plt.savefig('figures/confussion_matrix.png', dpi=500, bbox_inches='tight')
 plt.show()
 
 
@@ -171,5 +177,5 @@ plt.xlabel('false positive rate')
 plt.ylabel('true positive ratio')
 plt.title('ROC One-vs-All Curve')
 plt.legend(loc='lower right', fontsize=9)
-plt.savefig('figures/roc.png', dpi=300, bbox_inches='tight')
+plt.savefig('figures/roc.png', dpi=500, bbox_inches='tight')
 plt.show()

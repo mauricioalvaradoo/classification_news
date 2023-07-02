@@ -1,4 +1,5 @@
 import pickle
+import gzip
 import re
 from string import punctuation
 import nltk
@@ -28,7 +29,7 @@ corpus = CategorizedPlaintextCorpusReader(
 
 
 # Guardar corpus
-with open('corpus.pkl', 'wb') as f:
+with gzip.open('corpus.pkl.gz', 'wb') as f:
     pickle.dump(corpus, f)
 
 
@@ -55,7 +56,8 @@ for categoria in categorias:
         w for w in ws
         if w not in stops and
            w not in punctuation and
-           w not in ['“', '”', '``', "''", '–', '‘', '’', '•']
+           w not in ['“', '”', '``', "''", '–', '‘', '’', '•'] and
+           str(w).isalpha() == True
     ]
 
     # Palabras más frecuentes por categoría
