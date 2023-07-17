@@ -1,0 +1,52 @@
+Este año, durante el Mobile World Congress 2023 (MWC 2023), la marca china  Xiaomi  dio la bienvenida a su nueva línea de equipos insignia a nivel global. Se trata de los modelos Xiaomi 13 Pro, Xiaomi 13 y Xiaomi 13 Lite, este último llegó al Perú hace un mes y está dirigido a un público que disfruta capturar fotografías. Tuvimos la oportunidad de probar al integrante menor de la nueva serie y, efectivamente,  destaca por la calidad de sus tres cámaras  y su interesante diseño. Sin embargo, existen otros puntos que deben ser mencionados en caso estés considerando comprarlo. A continuación, te contamos cómo fue nuestra experiencia con el Xiaomi 13 Lite. Pero antes repasemos sus características principales. Especificaciones Xiaomi 13 Lite Diseño -Dimensiones: 159,2 mm x 72,7 mm x 7,23 mm 
+-Peso: 171g 
+-Frente Corning Gorilla Glass 5 
+-Respaldo de cristal curvo 3D 
+-Colores: Azul Lite, Rosa Lite, Negro Sistema de imagen -Cámara gran angular de 50MP Sony IMX766 
+-Tamaño del sensor de 1/1,56” 
+-Tamaño de píxel de 1,0 μm, 
+-Superpíxel 4 en 1 de 2,0 μm 
+-f/1.8, lente 7P, campo de visión de 86° 
+-AF de contraste 
+-Modo videoblog 
+-Vídeo teleprompter 
+-Cámara ultra gran angular de 8MP Sony IMX355 
+-Tamaño del sensor de 1/4” 
+-f/2.2, lente 5P, campo de visión de 119° 
+-Cámara macro de 2MP 
+-Tamaño de sensor de 1/5” 
+-f/2.4, lente 3P, campo de visión de 82° 
+-Cámara frontal ultra gran angular de 32MP 
+-Tamaño de sensor de 1/2,74”, tamaño de píxel de 0,8 μm 
+-f/2.4, lente 6P, campo de visión de 100° 
+-Encuadre dinámico 
+-Resplandor de Selfie de Xiaomi 
+-Vídeo teleprompter 
+-Sensor de profundidad de 8MP Pantalla -Pantalla AMOLED FHD+ de 6,55 pulgadas y 120 Hz 
+-20:9, 2400 x 1080, 402 ppp 
+-Tasa de muestreo táctil de 240 Hz 
+-Brillo: 500 nits (típico), 1000 nits (pico) 
+-Relación de contraste: 5,000,000:1 (típico) 
+-Hasta 68 mil millones de colores 
+Dolby Vision®, HDR10+ 
+Modo de lectura 
+Modo de luz solar 
+Atenuación PWM de 1920 Hz Sistema operativo -Snapdragon 7 Gen 1 
+-LPDDR4X + UFS2.2 
+-8GB+128GB, 8GB+256GB 
+-MIUI 14 basado en Android 12 Batería y carga -Batería de 4500 mAh (típica) 
+-Carga turbo cableada de 67W 
+-Carga adaptable de Xiaomi Audio -Dolby Atmos Conectividad -Doble SIM 
+-Admite NFC⁸ 
+-Bluetooth 5.2 
+-Bandas: 
+-5G: 
+n1/n3/n5/n7/n8/n20/n28/n38/n40/n41/n6 
+6/n77/n78 
+-4G: LTE FDD: 
+1/2/3/4/5/7/8/12/13/17/18/19/20/26/28/3 
+2/66 
+-4G: LTE TDD: 38/40/41/42 
+-3G: WCDMA: 1/2/4/5/6/8/19 
+-2G: GSM: 2/3/5/8 
+-WiFi 6 Delicado y minimalista  son las palabras precisas para describir el diseño del Xiaomi 13 Lite. El equipo, cuyas  dimensiones son de 159,2 mm x 72,7 mm x 7,23 mm , también destaca por sus esquinas redondeadas. Esta última característica aporta comodidad al momento de sostener el móvil. El equipo viene en tres colores: Negro, Azul Lite y Rosa Lite. Todos tienen un efecto tornasolado a la luz del día y, si bien las tonalidades son elegantes,  el Rosa Lite resalta por la frescura del color pastel.  En mi opinión, el tono divertido contrasta muy bien con la sobriedad del equipo. El  Xiaomi 13 Lite pesa 171 gramos,  lo que significa que no es un equipo pesado, sino  bastante liviano al sostenerlo.  En lo que respecta a las cámaras, posee tres en la parte posterior y están unificadas en un solo módulo; sin embargo, el anillo que conforma la cámara principal y el gran angular sobresale un poco más. Es decir, tiene dos alturas. Pese a esto,  el móvil no se desliza fácilmente sobre una superficie plana, como una mesa o un escritorio. El  diseño de las cámaras  es  uno de los puntos que menos me ha gustado del equipo,  pues resulta algo tosco a la vista. Por otro lado, las huellas dactilares en el cristal posterior no son tan notorias en caso seas de los usuarios que prefieren no usar un case. De igual forma,  el Xiaomi 13 Lite incluye uno de plástico transparente para protegerlo. Ahora, otro punto en contra es el hecho de que  no cuenta con un puerto para audífonos de 3,5 mm.  De esta forma, la única forma de conectar audífonos es vía Bluetooth o alguno que tenga entrada USB tipo C. Esto podría ser un problema para quienes no son usuarios de los audífonos Bluetooth. Así,  la única entrada disponible es de tipo USB-C. La pantalla del equipo es una  AMOLED de 6,55 pulgadas con una resolución FHD+  que permite disfrutar apropiadamente de los  colores vivos.  Un punto importante a destacar, y que podría jugarle en contra, es que  los laterales son curvos.  Esto quiere decir que unas sutiles sombras estarán presentes en ambos lados en caso se esté consumiendo algún contenido con fondo blanco. La presencia de una isla de dos cámaras en la parte superior de la pantalla es un detalle que llama la atención. Esta no es dinámica, por lo que su única función es unificarlas, así que  ocupa una parte de la barra de notificaciones.  Sin embargo, está la opción de ocultarla sin mover la barra de estado. Su  tasa de refresco de 120 Hz  hace que la experiencia de ver videos en YouTube o explorar en redes sociales sea bastante agradable. Además, en lo que respecta a videojuegos de alta demanda gráfica, como Call of Duty, los gráficos corren sin problema alguno. Así, su procesador  Snapdragon 7 Gen 1  se desempeña correctamente. El único detalle es que el equipo se recalienta minutos después de haber iniciado una partida. Finalmente, el sonido es uno de sus puntos débiles. Si bien cuentan con la  tecnología Dolby Atmos,  el equipo  solo tiene un altavoz ubicado en la parte inferior.  El sonido no es malo, pero sí  se siente plano  y hay que subirle el volumen de forma considerable al momento de reproducir una canción o video. La batería del  Xiaomi 13 Lite es de 4500 mAh y su durabilidad es más que adecuada.  El equipo también incluye un  cargador de 67W  y, al ponerlo a prueba, tardó  43 minutos cargar el equipo del 5% al 100%.  El móvil puede sobrevivir sin problema alguno una jornada de 4 o 5 horas de uso. Tres cámaras son las que conforman el equipo: la  gran angular de 50 MP  —cuyo sensor es el IMX766 de Sony—, una  macro normal de 2 MP  y la  ultra gran angular de 8 MP,  que tiene un sensor IMX355 también de Sony. En lo que respecta a la cámara principal, los resultados son muy buenos y  el desenfoque natural en el modo estándar es un punto a rescatar.  Los colores se mantienen cálidos, aunque  tienden a ser algo exagerados.  Los colores verdes y azules, por ejemplo, son saturados y tienen un acabado algo artificial. Más allá de eso,  las fotografías tienen buena nitidez , especialmente en fotografías de animales y paisajes. Una vez más,  el modo nocturno se desempeña bastante bien , siendo este el protagonista de la cámara. Las fotografías tienen una buena calidad y  los tonos oscuros dejan de serlo sin parecer artificiales. En lo que respecta a la  cámara frontal, esta es de 32 MP  y ofrece una opción que podría funcionar para quienes crean contenido. Se trata de la  herramienta Teleprompter , que permite insertar un texto que puede ser leído mientras se graba un video. Teniendo en cuenta que tiene un buen diseño y una cámara capaz, creo que sí es una opción. Un detalle importante a considerar son las  curvas en ambos laterales de la pantalla , que podrían complicar un poco la experiencia de navegar por redes o ver algún video. Por otro lado, la capacidad que tiene para cargar al 100 % en poco más de 40 minutos es otro gran punto a favor. El Xiaomi 13 Lite está disponible en nuestro país en los tres colores ya mencionados, con un almacenamiento de 8GB-256GB.  Su precio de lanzamiento es de S/. 1999 en las Xiaomi Stores.

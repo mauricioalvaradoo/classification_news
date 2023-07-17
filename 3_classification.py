@@ -44,6 +44,17 @@ for cat in categories:
     y_test.extend([cat] * len(test_documents))
 
 
+with gzip.open('data/X_train.pkl.gz', 'wb') as f:
+    pickle.dump(X_train, f)
+with gzip.open('data/X_test.pkl.gz', 'wb') as f:
+    pickle.dump(X_test, f)
+with gzip.open('data/y_train.pkl.gz', 'wb') as f:
+    pickle.dump(y_train, f)
+with gzip.open('data/y_test.pkl.gz', 'wb') as f:
+    pickle.dump(y_test, f)
+
+
+
 # Procesamiento de texto ====================================================================================
 labels = LabelEncoder()
 y_train_encoded = labels.fit_transform(y_train) # Labels numéricos
@@ -151,6 +162,7 @@ plt.savefig('figures/confussion_matrix.png', dpi=500, bbox_inches='tight')
 plt.show()
 
 
+'''
 # Curva ROC -> One-vs-All
 num_classes = len(categories)
 fpr = dict(); tpr = dict(); roc_auc = dict()
@@ -179,3 +191,4 @@ plt.title('ROC One-vs-All Curve')
 plt.legend(loc='lower right', fontsize=9)
 plt.savefig('figures/roc.png', dpi=500, bbox_inches='tight')
 plt.show()
+'''
