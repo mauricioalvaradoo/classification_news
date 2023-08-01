@@ -197,7 +197,7 @@ def save_text_from_news(urls, src):
 
 # Extracción de información ==========================================================================================
 # Máximo 4 días hacia atrás (aprox. 100 noticias). 'Mundo' y 'deporte' alcanzan 100 noticias en 2 días. 
-date_to_consult = '22/07/2023'
+date_to_consult = '31/07/2023'
 
 
 urls_politica = get_urls_news(cat='politica', date=date_to_consult)
