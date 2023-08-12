@@ -42,7 +42,7 @@ def get_urls_news(cat, date):
         # Solo noticias del dia deseado
         if date_in_div and date in date_in_div.text:
             new = div.find('a', {'class': 'story-item__title'}).get('href')
-            news.append(f'https://elcomercio.pe/{new}')
+            news.append(f'https://elcomercio.pe{new}')
 
     return news
 
