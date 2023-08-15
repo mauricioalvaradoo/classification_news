@@ -22,9 +22,12 @@ from tensorflow.keras.callbacks import Callback
 with gzip.open('corpus.pkl.gz', 'rb') as f:
     corpus = pickle.load(f)
 
+
+fileids    = corpus.fileids()
 categories = corpus.categories() 
 print(categories)
 print(len(categories))
+print(len(fileids))
 
 
 # Train test split ==========================================================================================

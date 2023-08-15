@@ -18,7 +18,7 @@ Cada noticia fue almacenada en las siguientes rutas:
 - [news/deporte](https://github.com/mauricioalvaradoo/classification_news/blob/master/news/deporte)
 - [news/tech](https://github.com/mauricioalvaradoo/classification_news/blob/master/news/tech)
 
-La fecha de inicio de la extracción fue el 04/06/2023. Hasta la fecha de 22/07/2023 se extrajeron 7'398 noticias.
+La fecha de inicio de la extracción fue el 04/06/2023. Hasta la fecha de 11/08/2023 se extrajeron 10'102 noticias.
 
 
 ## Arquitectura neuronal
@@ -32,7 +32,7 @@ Las siguientes capas componen la arquitectura neuronal recurrente:
 
 
 ## Resultados
-Hasta la fecha de 22/07/2023*, son los siguientes:
+Hasta la fecha de 11/08/2023*, son los siguientes:
 <p align='center'>
       <img src='figures/accuracy.png' width='400'>
 </p>
@@ -44,4 +44,4 @@ Hasta la fecha de 22/07/2023*, son los siguientes:
       <img src='figures/confussion_matrix.png' width='400'>
 </p>
 
-\* Los resultados son preliminares. El ajuste en el _test sample_ fue de 93.5%. Se espera que mejore en la medida que se aumente la cantidad de noticias en los próximos días.
+\* Los resultados son preliminares. El ajuste en el _test sample_ fue de 94.8%. Se espera que mejore en la medida que se aumente la cantidad de noticias en los próximos días.
