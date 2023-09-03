@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix
 
 from tensorflow.keras import Sequential
-from tensorflow.keras.layers import Dense, Embedding, Flatten, Bidirectional, LSTM # ConvLSTM2D
+from tensorflow.keras.layers import Dense, Embedding, Flatten, Bidirectional, LSTM
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.losses import SparseCategoricalCrossentropy

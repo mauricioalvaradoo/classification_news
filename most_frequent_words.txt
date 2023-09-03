@@ -1,0 +1,117 @@
+TOP 20 palabras más frecuentes en deporte
+vs: 4841
+partido: 2859
+horas: 2597
+vía: 2593
+final: 2431
+liga: 2212
+copa: 2070
+equipo: 1843
+star: 1736
+fútbol: 1705
+estadio: 1627
+dos: 1598
+mundial: 1554
+torneo: 1487
+tras: 1477
+alianza: 1464
+sports: 1457
+partidos: 1435
+selección: 1411
+perú: 1403
+
+ --------------------------------------------------- 
+TOP 20 palabras más frecuentes en economia
+s: 3986
+perú: 3798
+año: 3605
+millones: 2745
+mercado: 2495
+país: 2227
+según: 1903
+años: 1887
+dólar: 1879
+sector: 1808
+economía: 1746
+precio: 1657
+inversión: 1633
+crecimiento: 1603
+ser: 1598
+hoy: 1581
+nacional: 1569
+mayor: 1538
+parte: 1512
+empresas: 1463
+
+ --------------------------------------------------- 
+TOP 20 palabras más frecuentes en mundo
+años: 4477
+país: 3906
+presidente: 3898
+según: 3543
+dos: 3159
+gobierno: 3046
+ucrania: 2795
+personas: 2782
+unidos: 2763
+trump: 2606
+ser: 2595
+tras: 2512
+después: 2500
+rusia: 2472
+parte: 2428
+seguridad: 2077
+año: 1862
+guerra: 1846
+pasado: 1834
+sido: 1827
+
+ --------------------------------------------------- 
+TOP 20 palabras más frecuentes en politica
+congreso: 3913
+perú: 3676
+caso: 3055
+castillo: 2932
+ministerio: 2325
+ser: 2146
+popular: 2143
+comisión: 2095
+gobierno: 2085
+fiscalía: 2075
+poder: 2051
+ley: 1971
+congresista: 1955
+s: 1925
+presidente: 1837
+público: 1820
+según: 1795
+país: 1701
+pedro: 1683
+investigación: 1666
+
+ --------------------------------------------------- 
+TOP 20 palabras más frecuentes en tech
+ia: 2949
+usuarios: 2650
+puede: 2468
+según: 2243
+solo: 1878
+ser: 1876
+inteligencia: 1775
+artificial: 1740
+cuenta: 1711
+iphone: 1441
+tecnología: 1392
+pueden: 1389
+parte: 1379
+además: 1367
+ahora: 1258
+información: 1246
+personas: 1241
+años: 1232
+forma: 1227
+compañía: 1210
+
+ --------------------------------------------------- 
+
+ Actualizado con noticias hasta 02/09/2023 
