@@ -160,7 +160,7 @@ def save_text_from_news(urls, src):
                 day = datetime.strptime(day, '%d/%m/%Y').strftime('%Y_%m_%d')
             except:
                 day = '_'.join(day.split('/')[::-1])
-            hour  = time.split()[1]
+            # hour  = time.split()[1]
 
             # Obviar noticias ya scrapeadas anteriormente del día
             if (title, day) in news_scrapped:
@@ -196,8 +196,8 @@ def save_text_from_news(urls, src):
 
 
 # Extracción de información ==========================================================================================
-# Máximo 4 días hacia atrás (aprox. 100 noticias). 'Mundo' y 'deporte' alcanzan 100 noticias en 2 días. 
-date_to_consult = '13/08/2023'
+# Máximo 4 días hacia atrás (aprox. 100 noticias). 'Mundo' y 'deporte' alcanzan 100 noticias en 2/3 días. 
+date_to_consult = '01/08/2023'
 
 
 urls_politica = get_urls_news(cat='politica', date=date_to_consult)

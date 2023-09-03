@@ -6,7 +6,7 @@ import gzip
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import confusion_matrix, roc_curve, auc
+from sklearn.metrics import confusion_matrix
 
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Embedding, Flatten, Bidirectional, LSTM # ConvLSTM2D
@@ -83,7 +83,7 @@ print(vocab_size)
 '''
 
 
-# Modelo de red neuronal ConvLSTM ===========================================================================
+# Modelo de red neuronal recurrente =========================================================================
 model = Sequential(
     [
         Embedding(vocab_size, 128),
@@ -165,33 +165,3 @@ plt.savefig('figures/confussion_matrix.png', dpi=500, bbox_inches='tight')
 plt.show()
 
 
-'''
-# Curva ROC -> One-vs-All
-num_classes = len(categories)
-fpr = dict(); tpr = dict(); roc_auc = dict()
-
-for i in range(num_classes):
-    y_true = (y_test_encoded == i).astype(int)
-    y_pred = (y_hat == i).astype(int)
-    fpr[i], tpr[i], _ = roc_curve(y_true, y_pred)
-    roc_auc[i] = auc(fpr[i], tpr[i])
-
-plt.figure()
-for i in range(num_classes):
-    plt.plot(
-        fpr[i],
-        tpr[i],
-        lw=2,
-        label='{0} (AUC = {1:.2f})'.format(orig_labels[i], roc_auc[i])
-    )
-
-plt.plot([0, 1], [0, 1], color='black', lw=1, linestyle='--')
-plt.xlim([0, 1])
-plt.ylim([0, 1.05])
-plt.xlabel('false positive rate')
-plt.ylabel('true positive ratio')
-plt.title('ROC One-vs-All Curve')
-plt.legend(loc='lower right', fontsize=9)
-plt.savefig('figures/roc.png', dpi=500, bbox_inches='tight')
-plt.show()
-'''
