@@ -38,7 +38,7 @@ with gzip.open('corpus.pkl.gz', 'wb') as f:
 
 
 # Definición ==============================================================================================
-last_day = '02/09/2023'
+last_day = '20/09/2023'
 
 fileids    = corpus.fileids()
 categorias = corpus.categories()

@@ -1,16 +1,16 @@
 {
    "Noticias":{
-      "deporte":2990,
-      "economia":2187,
-      "mundo":3323,
-      "politica":1749,
-      "tech":2460
+      "deporte":3504,
+      "economia":2536,
+      "mundo":3965,
+      "politica":2075,
+      "tech":2700
    },
    "% Total":{
-      "deporte":23.5,
+      "deporte":23.7,
       "economia":17.2,
-      "mundo":26.1,
-      "politica":13.8,
-      "tech":19.4
+      "mundo":26.8,
+      "politica":14.0,
+      "tech":18.3
    }
 }

@@ -1,0 +1,28 @@
+Apple  presentó este martes su nueva generación de teléfono móviles  iPhone 15 , equipos que reúnen lo mejor de la tecnología móvil en la actualidad. La firma de la manzana mordida develó cuatro modelos de los cuales el más potente es el iPhone 15 Pro Max, que sería la principal apuesta de la compañía, pues se espera que sea el más vendido. A propósito de la llegada de este nuevo celular top, a continuación, hacemos una comparación entre los dispositivos más potentes de Apple y Samsung, nos referimos al iPhone 15 Max Pro y Samsung Galaxy S23, respectivamente. iPhone 15 Max Pro Características Dimensiones 159,9 x 76,7 x 8,3 mm Peso 221 gramos Pantalla - 6,7 pulgadas, 110,2 cm2 
+ - Notch agujero (isla dinámica) 
+ - Panel Super Retina XDR OLED 
+ - Tasa de refresco de 120 Hz 
+ - Resolución 1.290 x 2.796 píxeles 
+ - Formato 19,5:9 
+ - HDR10, Dolby Vision, 2.000 nits Procesador Apple A17 Bionic Memoria interna 128 GB / 256 GB / 512 GB / 1 TB Memoria RAM No se anunció Cámara principal 48 MP principal + 12,7 MP telefoto + 13,4 MP ultra ancho + sensor TOF 3D LiDAR Cámara frontal 12 MP + sensor SL 3D Batería 4.852 mAh Sistema operativo iOS 17 Conectividad - 5G 
+- Bluetooth 6 
+- USB Tipo C 3.2 
+- WiFi 6 
+- eSim 
+- GPS 
+- NFC Otros Always On display, FaceID, carga inalámbrica MagSafe, detector de choques, software de emergencia vía satélite en caso de accidentes Samsung Galaxy S23 Características Dimensiones 163,4 x 78,1 x 8,9 mm Peso 234 g Pantalla - Dynamic AMOLED 2X, 120Hz, HDR10+, 1.750 nits 
+- 6.8 pulgadas  
+- Relación de cuerpo / pantalla del 89,9% 
+- 1.440 x 3.088 píxeles 
+- Corning Gorilla Glass Victus 2 Procesador Qualcomm SM8550-AC Snapdragon 8 Gen 2 (4 nm) Memoria interna 256 GB / 512 GB / 1TB Memoria RAM 8 GB / 12 GB Cámara principal 200 MP principal / estándar + 12 MP angular + 10 MP zoom 3X + 10 MP zoom 10X Cámara frontal 42 megapíxeles f/2.2 25mm Batería - 5.000 mAh 
+- Carga rápida de 45W 
+- Carga inalámbrica de 15W Sistema operativo - Android 13 
+- One UI 5.1 Conectividad - 5G (2xNano + eSIM) 
+- WiFi 6E 
+- Bluetooth 5.3 
+- GPS 
+- NFC 
+- UWB 
+- USB tipo C 3.2 Otros - IP68 
+- Compatible con Samsung DeX 
+- S-Pen con 2,8ms de latencia
