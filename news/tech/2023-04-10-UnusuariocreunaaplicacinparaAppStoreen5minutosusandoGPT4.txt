@@ -1,0 +1,5 @@
+Un usuario publicó un video en YouTube donde le pide a GPT-4 que le haga una aplicación para subir a la App Store. La  inteligencia artificial  tardó solo 5 minutos en desarrollarla desde cero.  Se trata del desarrollador independiente Morten Just, quien explicó a la IA que tenía que hacer una aplicación sencilla de ‘to do list’. Para ello, redactó indicaciones concretas, especificando muy bien lo que quería.  Entre las instrucciones, Just le explicó cómo tiene que funcionar la app, qué cosas deben ir y más.  Luego, lo que hizo  GPT-4  de manera inmediata, fue preparar el código de la app listo para ser solo copiado y pegado en xCode, una plataforma de herramientas de programación para dispositivos Apple.   Aquí el video. Como se ve, el desarrollador prueba la aplicación creada por GPT-4 en su Mac, la cual parece funcionar de manera correcta.  
+ 
+ 
+ 
+ Si bien el aplicativo parece simple, desde ya prueba la capacidad de GPT-4 para llevara a cabo proyectos en cuestión de minutos.

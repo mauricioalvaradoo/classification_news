@@ -1,0 +1,5 @@
+Spotify  ha añadido un nuevo   widget para la pantalla de bloqueo del  iPhone , el cual permite ingresar a la app de manera más rápida. De esta manera, los desarrolladores de la plataforma han aprovechado las nuevas características de la actualización  i OS 16 .  A partir de ahora, no será necesario desbloquear el iPhone para buscar la aplicación de streaming. Con la llegada de este widget, el proceso se reduce a solo un toque en la pantalla de bloqueo. Ahora bien, uno de los requisitos para tener esta personalización es tener la actualización iOS 16 en adelante así como tener Spotify actualizado a la versión más reciente. Primero, ve a la  pantalla de bloqueo de tu iPhone y mantén presionado.  Luego, presiona el botón  Personalizar  en la parte inferior. Ahora, presiona la opción  Pantalla bloqueada  y aparecerán iconos debajo de la hora.  Reconoce  el icono de Spotify  y presiónalo.  Listo, ya tienes el widget de Spotify en tu pantalla de bloqueo. 
+ 
+ 
+ 
+ Cabe recalcar que, esta funcionalidad funciona como un acceso directo a la aplicación, pero no como un reproductor.

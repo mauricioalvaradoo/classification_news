@@ -1,50 +1,94 @@
-from datetime import datetime
-import re
-import csv
+# pip install webdriver_manager
+import re, time, json
+from datetime import datetime, timedelta
+
 from bs4 import BeautifulSoup
 import requests
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 
-# Declaración de funciones ===========================================================================================
-
-def get_urls_news(cat, date):
+# Declaración de funciones ====================================================
+def get_urls_news(date):
     ''' Consigue los 'urls' de cada noticia para una fecha definida
-    
+     
     Parámetros
     -----------
-    cat[str]: categoría de la noticia. las permitidas son las siguientes:
-        -- politica
-        -- mundo
-        -- economia
-        -- deporte-total
-        -- tecnologia
-    
-    date[str]: día deseado. ejemplo: '27/05/2023'
+    date[str]: día deseado. ejemplo: '2023-05-27'
         
     Retorno
     ----------
-    news[list]: urls
+    cat_urls[list]: dictionario de urls
+    
     '''
-
-    base = 'https://elcomercio.pe/archivo/'
-    url  = f'{base}{cat}/'
-    html = requests.get(url)
-    soup = BeautifulSoup(html.content, 'html.parser').find('div', {'role': 'main'})
-
-    # Noticias
-    divs = soup.find_all('div', {'class': 'story-item'})
-    news = []
-
-    for div in divs:
-        date_in_div = div.find('span', {'class': 'story-item__date-time'})
+    
+    chrome_service = ChromeService(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=chrome_service)
+    
+    url = f'https://elcomercio.pe/archivo/todas/{date}/'
+    driver.get(url)
+    
+    
+    try:
+        driver.get(url)
         
-        # Solo noticias del dia deseado
-        if date_in_div and date in date_in_div.text:
-            new = div.find('a', {'class': 'story-item__title'}).get('href')
-            news.append(f'https://elcomercio.pe{new}')
+        html_to_scroll = driver.find_element(By.XPATH, '//body')
+        scrolls = 0
+        page_height = driver.execute_script('return document.body.scrollHeight')
+        while scrolls < page_height:
+            html_to_scroll.send_keys(Keys.PAGE_DOWN)
+            scrolls += 400
+            time.sleep(0.2)
+        
+        
+        html = driver.page_source
+        driver.quit()
+        
+        soup = BeautifulSoup(html, 'html.parser')
+        divs = soup.find_all('div', class_='story-item')
+        news = []
+    
+        for div in divs:
+            new = div.find('a', class_='story-item__title').get('href')
 
-    return news
+            if new.startswith(
+                    (
+                        '/politica/', '/economia/', '/mundo/',
+                        '/deporte-total/', '/tecnologia/'
+                    )
+            ):
+                news.append(f'https://elcomercio.pe{new}')
+    
+        
+        cat_urls = {
+            'politica': [],
+            'economia': [],
+            'mundo':    [],
+            'deporte':  [],
+            'tech':     []
+        }
+        
+        for url in news:
+            if '/politica/' in url:
+                cat_urls['politica'].append(url)
+            elif '/economia/' in url:
+                cat_urls['economia'].append(url)
+            elif '/mundo/' in url:
+                cat_urls['mundo'].append(url)
+            elif '/deporte-total/' in url:
+                cat_urls['deporte'].append(url)
+            elif '/tecnologia/' in url:
+                cat_urls['tech'].append(url)
+
+        return cat_urls
+    
+    except Exception as e:
+        print(f'Error: {str(e)}')
+
 
 
 
@@ -113,102 +157,72 @@ def text_processing(text):
 
 
 
-def save_text_from_news(urls, src):
+def save_text_from_news(date):
     ''' Guarda archivos de texto de cada noticia
     
     Parámetros
     -----------
-    urls[list]: urls de noticias
-    src[str]: nombre de la ruta donde se guarda el texto
+    date[str]: día deseado. ejemplo: '2023-05-27'
 
     '''
 
-    full = []
-    news_scrapped = set()
+    print(f'... Scrapeando a El Comercio. Fecha consultada: {date} ...')    
 
-    # Existencias en control.csv
-    try:
-        with open('news/control.csv', 'r', encoding='utf-8') as f:
-            reader = csv.reader(f, delimiter=';')
-            next(reader)
-            for row in reader:
-                title = row[0]
-                day = row[1]
-                news_scrapped.add((title, day))  # Agregar título y día al conjunto de noticias ya scrapeadas
-    except FileNotFoundError:
-        pass
+    dict_urls = get_urls_news(date=date)
 
+    control = {}    
 
-    for url in urls:
+    for cat, urls in dict_urls.items():
         
-        try:
-            html = requests.get(url)
-            soup = BeautifulSoup(html.content, 'html.parser')
-
-            # Titulo
+        for url in urls:
             try:
-                title = soup.find('h1', {'class': 'sht__title'}).text # Normal
-            except:
-                title = soup.find('h1', {'class': 'story-header-title'}).text # Para suscriptores
-                        
-            # Texto
-            text  = soup.find('div', {'class': 'story-contents__content'})
-            # Tiempo
-            time  = soup.find('time').text
-            day   = time.split()[0]
-            try: # Fechas mal formateadas
-                day = datetime.strptime(day, '%d/%m/%Y').strftime('%Y_%m_%d')
-            except:
-                day = '_'.join(day.split('/')[::-1])
-            # hour  = time.split()[1]
-
-            # Obviar noticias ya scrapeadas anteriormente del día
-            if (title, day) in news_scrapped:
-                continue
-            
-            # Eliminación de contenido no relevante
-            texto_clean = text_processing(text)
-
-            # Guardar en un 'txt'
-            title_for_file = re.sub(r'[^a-zA-Z0-9]', '', title)
-            file_name = f'{day}-{title_for_file}'
-            
-            if len(texto_clean) != 0: # Puede que en las 'noticias para suscriptores' no se haya extraido nada
-                with open(f'news/{src}/{file_name}.txt', 'w', encoding='utf-8') as f:
-                    f.write(texto_clean)
+                
+                html = requests.get(url)
+                soup = BeautifulSoup(html.content, 'html.parser')
     
-                new = [title, day, src, file_name, url]
-                full.append(new)
-        
-        except:
-            pass
+                # Titulo
+                try:
+                    # Normal
+                    title = soup.find('h1', {'class': 'sht__title'}).text
+                except:
+                    # Para suscriptores
+                    title = soup.find('h1', {'class': 'story-header-title'}).text
+                            
+                # Texto
+                text  = soup.find('div', {'class': 'story-contents__content'})
+                
+                # Eliminación de contenido no relevante
+                texto_clean = text_processing(text)
+    
+                # Guardar en un 'txt'
+                title_for_file = re.sub(r'[^a-zA-Z0-9]', '', title)
+                file_name = f'{date}-{title_for_file}'
+                
+                # Puede que en las 'noticias para suscriptores' no se haya extraido nada
+                if len(texto_clean) != 0:
+                    with open(f'news/{cat}/{file_name}.txt', 'w', encoding='utf-8') as f:
+                        f.write(texto_clean)
+                
+                control[file_name] = url
+                
+            except:
+                pass
+    
+    with open(f'control/{date}.json', 'w') as f: 
+        json.dump(control, f, ensure_ascii=False, indent=2)
 
 
-    # Control
-    if full:
-        with open('news/control.csv', 'a', encoding='utf-8', newline='') as f:
-            writer = csv.writer(f, delimiter=';')
-            if f.tell() == 0:
-                writer.writerow(['Titulo', 'Fecha', 'Categoria', 'Título del archivo', 'Url'])
-            writer.writerows(full)
 
 
+# Extracción de noticias ======================================================
+ini = datetime(2023,4,5)
+fin = datetime(2023,9,23)
 
+lista_fechas = [
+    (ini + timedelta(days=d)).strftime('%Y-%m-%d')
+        for d in range((fin - ini).days + 1)
+] 
 
-# Extracción de información ==========================================================================================
-# Máximo 4 días hacia atrás (aprox. 100 noticias). 'Mundo' y 'deporte' alcanzan 100 noticias en 2/3 días. 
-date_to_consult = '22/09/2023'
-
-
-urls_politica = get_urls_news(cat='politica', date=date_to_consult)
-urls_mundo    = get_urls_news(cat='mundo', date=date_to_consult)
-urls_economia = get_urls_news(cat='economia', date=date_to_consult)
-urls_deporte  = get_urls_news(cat='deporte-total', date=date_to_consult)
-urls_tech     = get_urls_news(cat='tecnologia', date=date_to_consult)
-
-save_text_from_news(urls_politica, src='politica')
-save_text_from_news(urls_mundo, src='mundo')
-save_text_from_news(urls_economia, src='economia')
-save_text_from_news(urls_deporte, src='deporte')
-save_text_from_news(urls_tech, src='tech')
+for i in lista_fechas:
+    save_text_from_news(date=i)
 

@@ -18,7 +18,7 @@ Cada noticia fue almacenada en las siguientes rutas:
 - [news/deporte](https://github.com/mauricioalvaradoo/classification_news/blob/master/news/deporte)
 - [news/tech](https://github.com/mauricioalvaradoo/classification_news/blob/master/news/tech)
 
-La fecha de inicio de la extracción fue el 04/06/2023. Hasta la fecha de 02/09/2023 se extrajeron 12'709 noticias.
+Las fechas consideradas en la extracción son de 1-ene-2023 a 23-set-2023. Son 29'506 noticias.
 
 
 ## Arquitectura neuronal

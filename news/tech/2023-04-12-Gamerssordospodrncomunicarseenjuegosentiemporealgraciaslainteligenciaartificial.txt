@@ -1,0 +1,5 @@
+Hoy en día  los videojuegos  llegan a todo el mundo. Lo juegan mujeres, hombres, niños, adultos, y una nueva propuesta podrá hacer que los gamers sordos se integren a la industria para responder con audio durante las partidas en línea. El proyecto tecnológico se llama E-nterpreters Season 2 y, gracias a un algoritmo de inteligencia artificial, puede interpretar el movimiento de labios y gestos para convertirlos en voz. Ya existía una propuesta anterior que usaba bots para traducir. Este mes debería estar disponible la evolución de esta propuesta, pero que cuenta con el uso de la inteligencia artificial, informó la agencia  Andina. La idea es que funcione en tiempo real. Se debe contar con una cámara web. “En Perú existen más de 532 mil personas sordas, la mayoría jóvenes entre los 18 y 29 años que encuentran en el gaming un espacio para socializar”, dijo Cecilia Mircin, Marketing Head de Pilsen Callao, empresa detrás de esta iniciativa. 
+ 
+ 
+ 
+ También participan DDB Perú, junto a Cirsys y Tunche Films, que incorporaron la tecnología de reconocimiento facial que lee gestos y movimiento de labios de los jugadores sordos a través de la cámara web.

@@ -1,0 +1,5 @@
+Desde hace tres décadas usamos la función Imprimir Pantalla con la tecla Impr Pant. Sin embargo, como parte de los cambios y modernización,  Windows  11 ya no te permitirá capturar la pantalla con esa funcionalidad. Según informa  Windows Latest , la próxima actualización para Windows 11 cambiará el comportamiento de la tecla Impr Pant. En vez de realizar una captura de pantalla y guardarla en el portapapeles, ahora al presionar la tecla se abrirá la herramienta de Recortes por defecto. Pero, hay buenas noticias para aquellos que no estén de acuerdo con este cambio, puesto que Windows nos permitirá revertir el cambio en la función de la tecla Impr Pant. Para ello, se deberá ingresar a Configuración, luego a Accesibilidad y finalmente en Teclado. 
+ 
+ 
+ 
+ Tal como afirma  Hipertextual,  este cambio ya eestá funcionando en la versión KB5025310 para los usuarios del canal Beta del programa Insider.

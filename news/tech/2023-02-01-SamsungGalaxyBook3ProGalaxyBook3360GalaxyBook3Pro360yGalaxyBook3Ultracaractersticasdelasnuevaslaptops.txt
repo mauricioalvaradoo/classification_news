@@ -1,0 +1,81 @@
+Samsung  ha lanzado sus mejores dispositivos en el Galaxy Unpacked 2023, incluyendo sus cuatro nuevas laptops de última generación. La compañía ha mostrado las Galaxy Book3 durante el evento, las cuales buscan superar a sus predecesoras con mejores características. ¿Cuáles son las especificaciones técnicas de cada una? Al igual de la generación pasada, Samsung ha lanzado cuatro laptops, pero en esta ocasión se encuentra  la Galaxy Book 3 Ultra , la más potente. Asimismo,  solo hay dos Galaxy Book3 360 , por lo que una versión es Pro. Estas computadoras portátiles se pueden utilizar como tablet. Además, los cuatro modelos  llevan la 13va generación de procesadores de Intel . Otro detalle que comparten las máquinas de la firma surcoreana es que  han sido fabricadas con plástico reciclado de origen marino  (incluidas redes de pesca desechadas). De acuerdo a Samsung, se utilizó  al menos 70% de papel reciclado para su empaque  y se eliminaron las estampas de sellado plástico. Sumado a esto,  las cuatro disponen de una pantalla AMOLED 3K y algunas llegan hasta las 16 pulgadas con mejoras en la visualización de colores , según ha comentado Samsung. Las laptop Galaxy Book3 presentan un  nuevo aspecto 16:10  para más contenido visible en pantalla (ves hasta 11% más de información), una tasa de refresco de 120Hz y una resolución de  2.800 x 1.800 píxeles . La  Galaxy Book3 Ultra Pro,  la más potente de la serie, tiene, como mencionamos,  una pantalla de 16 pulgadas AMOLED 3K , soporte para hasta  32 GB de memoria RAM , una tarjeta de video  Nvidia RTX , soporte para  HDMI 2.0  (en lugar de 1.4, como sus hermanas menores),  un grosor de 16,5mm y peso de 1,79 kg,  entre otras novedades. Especificaciones técnicas Samsung Galaxy Book3 Pro Pantalla 3K AMOLED 2X de 14 ó 16 pulgadas 
+2880 x 1800 píxeles 
+Tasa de refresco de hasta 120Hz 
+16:10 Procesador Intel Core i7-1360P Memoria RAM 16 GB Memoria interna Hasta 1 TB Tarjeta gráfico Intel Iris Xe Conectividad WiFi 6E 
+Bluetooth 5.1 Puertos 2 puertos Thunderbolt 4 
+USB-A 
+HDMI 1.4 
+microSD 
+Plug de audio 3.5 mm Batería 63 WH 
+Carga de 65W Sonido Calidad de estudio Dual Mic con ANC 
+Software de cancelación de ruido 
+Woofer max 5W x 2 
+Tweeter Max 2W x 2 
+Dolby Atmos Otros Piezas fabricadas con plástico reciclado de origen marino 
+Cámara web 1.080P Full HD 
+Multi Control (smartphones y tablets Galaxy) 
+Instant Hotspot 
+Lector de huella digital Dimensiones 14 pulgadas: 31,21 x 22,37 x 1,11 mm 
+16 pulgadas: 35.53 x 25,04 x 1,24 mm Peso 14 pulgadas: 1,17 kg 
+16 pulgadas: 1,56 kg Sistema operativo Windows 11 Colores Grafito 
+Beige Precio Desde US$1.449,99 Especificaciones técnicas Samsung Galaxy Book3 360 Pantalla 3K AMOLED 2X de 13,3 ó 15,6 pulgadas 
+2880 x 1800 píxeles 
+Tasa de refresco de hasta 120Hz 
+16:10 Procesador Intel Core i7-1360P Memoria RAM 16 GB Memoria interna Hasta 1 TB Tarjeta gráfica Intel Iris Xe Conectividad WiFi 6E 
+Bluetooth 5.1 Puertos Thunderbolt 4 
+USB-A 
+HDMI 1.4 
+microSD 
+Plug de audio 3.5 mm Batería 76 WH 
+Carga de 65W Sonido Calidad de estudio Dual Mic con ANC 
+Software de cancelación de ruido 
+Woofer max 5W x 2 
+Tweeter Max 2W x 2 
+Dolby Atmos Otros Compatible con S Pen 
+Convertbile 2 en 1 
+Piezas fabricadas con plástico reciclado de origen marino 
+Cámara web 1.080P Full HD 
+Multi Control (smartphones y tablets Galaxy) 
+Instant Hotspot 
+Lector de huella digital Dimensiones 13,3 pulgadas: 30,43 x 20,19 x 1,30 cm 
+15,6 pulgadas: 35.53 x 22,81 x 1,37 cm Peso 13,3 pulgadas: 1,16 kg 
+15,6 pulgadas: 1,46 kg Sistema operativo Windows 11 Colores Grafito Precio Desde US$1.299,99 Especificaciones técnicas Samsung Galaxy Book3 Pro 360 Pantalla 3K AMOLED 2X de 16 pulgadas 
+2880 x 1800 píxeles 
+Tasa de refresco de hasta 120Hz 
+16:10 
+Touchscreen Procesador Intel Core i7-1360P Memoria RAM 16 GB Memoria interna Hasta 1 TB Tarjeta gráfica Intel Iris Xe Conectividad WiFi 6E 
+Bluetooth 5.1 Puertos 2 puertos Thunderbolt 4 
+USB-A 3.2 
+HDMI 2.0 
+microSD 
+Plug de audio 3.5 mm Batería 76 WH 
+Carga de 65W Sonido Calidad de estudio Dual Mic con ANC 
+Software de cancelación de ruido 
+Woofer max 5W x 2 
+Tweeter Max 2W x 2 
+Dolby Atmos Otros Compatible con S Pen 
+Convertbile 2 en 1 
+Piezas fabricadas con plástico reciclado de origen marino 
+Cámara web 1.080P Full HD 
+Multi Control (smartphones y tablets Galaxy) 
+Instant Hotspot 
+Lector de huella digital Dimensiones 35,5 x 25,2 x 1,27 cm Peso 1,66 kg Sistema operativo Windows 11 Colores Grafito 
+Beige Precio Desde US$1.699,99 Especificaciones técnicas Samsung Galaxy Book3 Ultra Pantalla 3K AMOLED 2X de 16 pulgadas 
+2880 x 1800 píxeles 
+Tasa de refresco de hasta 120Hz 
+16:10 Procesador Intel Core i7-13700H / Intel Core i9-13900H Memoria RAM Hasta 32 GB Memoria interna Hasta 1 TB Tarjeta gráfica NVIDIA RTX 4050 
+NVIDIA RTX 4070 Conectividad WiFi 6E 
+Bluetooth 5.1 Puertos 2 puertos Thunderbolt 4 
+USB-A 3.2 
+HDMI 2.0 
+microSD 
+Plug de audio 3.5 mm Batería 76 WH 
+Carga de 136W Sonido Calidad de estudio Dual Mic con ANC 
+Software de cancelación de ruido 
+Woofer max 5W x 2 
+Tweeter Max 2W x 2 
+Dolby Atmos Otros Piezas fabricadas con plástico reciclado de origen marino 
+Cámara web 1.080P Full HD 
+Multi Control (smartphones y tablets Galaxy) 
+Instant Hotspot 
+Lector de huella digital Dimensiones 35,5 x 25 x 1,65 cm Peso 1,79 kg Sistema operativo Windows 11 Colores Grafito Precio Desde US$2.199,99
