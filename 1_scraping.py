@@ -1,4 +1,5 @@
 # pip install webdriver_manager
+# pip install selenium
 import re, time, json
 from datetime import datetime, timedelta
 
@@ -215,8 +216,8 @@ def save_text_from_news(date):
 
 
 # Extracción de noticias ======================================================
-ini = datetime(2023,4,5)
-fin = datetime(2023,9,23)
+ini = datetime(2023,9,24)
+fin = datetime(2023,9,26)
 
 lista_fechas = [
     (ini + timedelta(days=d)).strftime('%Y-%m-%d')

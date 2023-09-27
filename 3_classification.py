@@ -1,13 +1,14 @@
+# pip install matplotlib==3.7.3
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pickle
-import gzip
+import pickle, gzip
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import confusion_matrix
 
+import tensorflow as tf
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, Embedding, Flatten, Bidirectional, LSTM
 from tensorflow.keras.preprocessing.text import Tokenizer
@@ -15,6 +16,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.losses import SparseCategoricalCrossentropy
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.callbacks import Callback
+
+print(tf.config.list_physical_devices('GPU'))
 
 
 
@@ -86,15 +89,13 @@ print(vocab_size)
 # Modelo de red neuronal recurrente =========================================================================
 model = Sequential(
     [
-        Embedding(vocab_size, 128),
-        Bidirectional(LSTM(64, return_sequences=True)),
-        Bidirectional(LSTM(64)),
-        # ConvLSTM2D(filters=64, kernel_size=(1, 1), activation='relu', padding='same', return_sequences=True),
-        # ConvLSTM2D(filters=32, kernel_size=(1, 1), activation='relu', padding='same'),
+        Embedding(input_dim=vocab_size, output_dim=256),
+        Bidirectional(LSTM(units=128, return_sequences=True)),
+        Bidirectional(LSTM(units=128)),
         Flatten(),
-        Dense(64, activation='relu'),
-        Dense(32, activation='relu'),
-        Dense(5, activation='linear')
+        Dense(units=64, activation='relu'),
+        Dense(units=32, activation='relu'),
+        Dense(units=5, activation='linear')
     ]
 )
 # print(model.summary())
@@ -119,15 +120,15 @@ results = model.fit(
     callbacks = [callbacks]
 )
 
-# Guardado
+
 '''
+# Guardado
 with gzip.open('results.pkl.gz', 'wb') as f:
     pickle.dump(results, f)
 
 model.save('model.h5')
 '''
 
-    
 
 # Visualizaciones ============================================================================================
 plt.plot(results.history['accuracy'])
@@ -160,8 +161,6 @@ plt.xticks(ticks=np.arange(len(orig_labels))+0.5, labels=orig_labels, ha='center
 plt.yticks(ticks=np.arange(len(orig_labels))+0.5, labels=orig_labels, va='center')
 plt.xlabel('estimated')
 plt.ylabel('real')
-plt.title('Confussion Matrix')
+plt.title('Confussion Matrix: test sample')
 plt.savefig('figures/confussion_matrix.png', dpi=500, bbox_inches='tight')
 plt.show()
-
-

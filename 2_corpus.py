@@ -1,3 +1,4 @@
+# pip install nltk
 import pickle, gzip
 import pandas as pd
 import numpy as np
@@ -38,7 +39,7 @@ with gzip.open('corpus.pkl.gz', 'wb') as f:
 
 
 # Definición ==============================================================================================
-last_day = '23/09/2023'
+last_day = '26/09/2023'
 
 fileids    = corpus.fileids()
 categorias = corpus.categories()
@@ -92,7 +93,7 @@ with open('most_frequent_words.txt', 'w') as file:
             print(f'{w}: {f}')
         print('\n --------------------------------------------------- \n')
 
-    file.write(f'\n Actualizado con noticias hasta {last_day} \n')
+    file.write(f'\n Actualizado con noticias del 01/01/2023 hasta {last_day} \n')
 
 
 news_per_cat.to_json('news_per_category.json', indent=3)
