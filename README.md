@@ -22,7 +22,19 @@ Cada noticia fue almacenada en las siguientes rutas:
 - [news/deporte](https://github.com/mauricioalvaradoo/classification_news/blob/master/news/deporte)
 - [news/tech](https://github.com/mauricioalvaradoo/classification_news/blob/master/news/tech)
 
-Las fechas consideradas en la extracción son de **01/01/2023** a **26/09/2023**. Son **29'837** noticias.
+Las fechas consideradas en la extracción son de **01/01/2023** a **26/09/2023**.
+
+Se obtuvo **29'837** noticias, distribuidas en las siguientes categorías:
+<div align="center" style="margin-top: 10px; margin-bottom: 10px; max-width: 300px;">
+
+| Categorías | Frecuencia | %     |
+|----------- |----------- |-------|
+| Política   | 4'085       | 13.7  |
+| Mundo      | 9'390       | 31.5  |
+| Economía   | 4'322       | 14.5  |
+| Deporte    | 7'466       | 25.0  |
+| Tech       | 4'574       | 15.3  |
+</div>
 
 
 ## Configuración de la GPU
