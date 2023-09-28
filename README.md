@@ -26,10 +26,10 @@ Las fechas consideradas en la extracción son de **01/01/2023** a **26/09/2023**
 
 
 ## Configuración de la GPU
-Dada la gran cantidad de noticias, es necesario configurar [tensorflow](https://www.tensorflow.org/?hl=es-419) para la estimación de redes neuronales con la GPU.
+Dada la gran cantidad de noticias, es necesario configurar [tensorflow](https://www.tensorflow.org/?hl=es-419) para que permita estimaciones de redes neuronales con la GPU, lo cual acelerará en gran medida los tiempos de estimación. De manera ilustrativa, cada _epoch_ pudo haber demorado cerca a 4 horas en ser estimada por la CPU, pero únicamente tomó 12 minutos con la GPU. En total, fue necesario 25 _epochs_.
 
 Pasos:
-1. Windows 7 o superior (64 bits)
+1. Windows 7 o superior (64 bits).
 2. Instalar Microsoft Visual C++ Redistribuible (64 bits). Descargar [aquí](https://learn.microsoft.com/es-ES/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 3. Instalar Miniconda. Es recomendado para instalar TensorFlow con compatibilidad con GPU. Descargar [aquí](https://docs.conda.io/projects/miniconda/en/latest/).
 4. Crear un entorno virtual. Abrir Anaconda Prompt y escribir lo siguiente:
@@ -69,7 +69,7 @@ Las siguientes capas componen la RNN:
 
 
 ## Resultados
-Con noticias hasta 26/09/2023, el ajuste en el _test sample_ fue de 95.6%. Las Figuras de (i) ajuste por epoch, (ii) _log loss_ por epoch, y (iii) matrix de confusión del _test sample_ son las siguientes:
+Con noticias hasta 26/09/2023, el ajuste en el _test sample_ fue de 95.6%. Las Figuras de (i) ajuste por _epoch_, (ii) _log loss_ por _epoch_, y (iii) matrix de confusión del _test sample_ son las siguientes:
 <p align='center'>
       <img src='figures/accuracy.png' width='400'>
 </p>
