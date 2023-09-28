@@ -69,7 +69,9 @@ Las siguientes capas componen la RNN:
 
 
 ## Resultados
-Con noticias hasta 26/09/2023, el ajuste en el _test sample_ fue de 95.6%. Las Figuras de (i) ajuste por _epoch_, (ii) _log loss_ por _epoch_, y (iii) matrix de confusión del _test sample_ son las siguientes:
+Se utilizó el 70% de las noticias para el entrenamiento (_training sample_), y se reservó 30% para el testeo fuera de la muestra (_testing sample_). Con noticias hasta 26/09/2023, el ajuste en el _test sample_ fue de 95.6%.
+
+Las Figuras de (i) ajustes de cada _sample_ por _epoch_, (ii) _log loss_ de cada _sample_ por _epoch_, y (iii) matrix de confusión del _test sample_ son las siguientes:
 <p align='center'>
       <img src='figures/accuracy.png' width='400'>
 </p>
