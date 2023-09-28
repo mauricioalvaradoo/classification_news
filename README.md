@@ -26,7 +26,7 @@ Las fechas consideradas en la extracción son de **01/01/2023** a **26/09/2023**
 
 
 ## Configuración de la GPU
-Dada la gran cantidad de noticias, es necesario configurar [tensorflow](https://www.tensorflow.org/?hl=es-419) para que permita estimaciones de redes neuronales con la GPU, lo cual acelerará en gran medida los tiempos de estimación. De manera ilustrativa, cada _epoch_ pudo haber demorado cerca a 4 horas en ser estimada por la CPU, pero únicamente tomó 12 minutos con la GPU. En total, fue necesario 25 _epochs_.
+Dada la gran cantidad de noticias, es necesario configurar [tensorflow](https://www.tensorflow.org/?hl=es-419) para que permita estimaciones de redes neuronales con la GPU, lo cual acelerará en gran medida los tiempos por época (_epoch_). De manera ilustrativa, cada _epoch_ pudo haber demorado cerca a 4 horas en ser estimada por la CPU, pero únicamente tomó 12 minutos con la GPU. En total, fue necesario 25 _epochs_.
 
 Pasos:
 1. Windows 7 o superior (64 bits).
